@@ -7,7 +7,7 @@ root_path = '/home/pol/projects/plant_traits_2024'
 data_path = os.path.join(root_path, 'data') 
 train_images_path = os.path.join(data_path, 'train_images')
 test_images_path = os.path.join(data_path, 'test_images')
-raw_data_path = os.path(data_path, 'raw')
+raw_data_path = os.path.join(data_path, 'raw')
 prepared_data_path = os.path.join(data_path, 'prepared')
 
 train_metadata_path = os.path.join(raw_data_path, 'train.csv')
