@@ -32,10 +32,10 @@ if __name__ == '__main__':
     print('Preparing data...')
     X_transformer = ColumnTransformer([
         ("standarize", StandardScaler(), train_vars[1:])
-    ], remainder='passthrough')
+    ], remainder='passthrough', verbose_feature_names_out=False)
     y_transformer = ColumnTransformer([
         ("standarize", StandardScaler(), target_vars)
-    ])
+    ], verbose_feature_names_out=False)
     X_transformer.set_output(transform = 'pandas')
     y_transformer.set_output(transform = 'pandas')
     X_transformer.fit(X_train)
